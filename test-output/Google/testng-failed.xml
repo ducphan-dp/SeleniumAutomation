@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Google]">
+  <test name="GoogleMain(failed)">
+    <classes>
+      <class name="selenium.automation.test.cases.TestGoogle">
+        <methods>
+          <include name="initDriver"/>
+          <include name="testMainPage"/>
+        </methods>
+      </class> <!-- selenium.automation.test.cases.TestGoogle -->
+    </classes>
+  </test> <!-- GoogleMain(failed) -->
+</suite> <!-- Failed suite [Google] -->
