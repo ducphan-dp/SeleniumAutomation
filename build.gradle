@@ -1,0 +1,37 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+ 
+dependencies {
+
+	compile 'org.apache.poi:poi:3.+'
+	compile 'org.apache.poi:poi-ooxml:3.+'
+    compile 'org.apache.poi:poi-scratchpad:3.+'
+
+	//Selenium
+    testCompile 'org.seleniumhq.selenium:selenium-java:2.+'
+    testCompile 'junit:junit:4.+'
+	
+    //This is the TestNG test execution library that is better than JUnit
+    //Adding a + for a version number means get the latest number for that version.  So in this case get the latest 6.8.whatever deployment
+    testCompile group: 'org.testng', name: 'testng', version: '6.8.+'
+
+    //An assertion library that is better than JUnit defaults
+    testCompile 'org.easytesting:fest-assert-core:2.0M10'
+
+    //Better reporting for testng.  It outputs a nice html report
+    testCompile 'org.uncommons:reportng:1.1.4'
+}
+
+tasks.withType(Test) {
+    scanForTestClasses = false
+    include "**/**" // whatever Ant pattern matches your test class files
+}
+
+test {
+    useTestNG {
+        suites 'src/test/resources/testng.xml'
+    }
+}

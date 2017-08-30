@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Google">
+  <test name="GoogleMain">
+    <classes>
+       <class name="selenium.automation.test.cases.TestGoogle"/>
+    </classes>
+  </test>
+</suite>
