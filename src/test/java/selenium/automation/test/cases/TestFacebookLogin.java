@@ -1,7 +1,5 @@
 package selenium.automation.test.cases;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
@@ -9,21 +7,22 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import selenium.automation.data.LoginTestCase;
-import selenium.automation.domain.LoginInfo;
-import selenium.automation.test.base.ChromeDriverTestBase;
+import selenium.automation.excel.ReadExcel;
+import selenium.automation.test.base.DriverTestBase;
 
-public class TestFacebookChrome extends ChromeDriverTestBase{
+public class TestFacebookLogin extends DriverTestBase {
+	private static final String FACEBOOK_PATH = "testcases/Facebook.xlsx";
+	private static final String FACEBOOK_LOGIN_SHEET = "Login";
 	
-	private LoginTestCase loginTestCase;
+	private ReadExcel excel;
 	
 	@BeforeTest
-	public void obtainTestCaseInfo() {
-		loginTestCase = new LoginTestCase();
+	public void readExcel() {
+		excel = new ReadExcel(FACEBOOK_PATH);
 	}
 	
 	@Test(dataProvider="LoginRecords")
-	public void loginPage(String userName, String password) {
+	public void loginPage(String testid, String userName, String password) {
 		driver.get("https://en-gb.facebook.com/");
 		WebElement txtUserName = driver.findElement(By.id("email"));
 		txtUserName.sendKeys(userName);
@@ -35,22 +34,12 @@ public class TestFacebookChrome extends ChromeDriverTestBase{
 	
 	@DataProvider(name="LoginRecords")
 	public Object[][] obtainDataFromProvider() {
-		List<LoginInfo> loginList = loginTestCase.obtainRecords();
-		Object[][] data = new Object[loginList.size()][2];
-		
-		for(int i = 0; i < loginList.size(); i++) {
-			data[i][0] = loginList.get(i).getUserName();
-			data[i][1] = loginList.get(i).getPassword();
-			
-			System.out.println(i + " " + data[i][0]);
-		}
-		
-		return data;
+		excel.setSheetName(FACEBOOK_LOGIN_SHEET);
+		return excel.obtainProviderData();
 	}
 	
 	@AfterTest
 	public void quite() {
 		driver.close();
 	}
-
 }

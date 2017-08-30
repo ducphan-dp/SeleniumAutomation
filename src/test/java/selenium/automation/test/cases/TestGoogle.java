@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import selenium.automation.test.base.ChromeDriverTestBase;
+import selenium.automation.test.base.DriverTestBase;
 
-public class TestGoogle extends ChromeDriverTestBase{
+public class TestGoogle extends DriverTestBase{
 
 	@Test
 	public void testMainPage() {

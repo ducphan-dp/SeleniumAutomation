@@ -2,7 +2,12 @@ package selenium.automation.excel;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -10,10 +15,10 @@ public class ReadExcel {
 
 	private String filePath;
 	private String sheetName;
-	private int sheetIndex;
 
 	private XSSFWorkbook workbook;
 	private XSSFSheet sheet;
+	FileInputStream fis;
 
 	public ReadExcel(String filePath, String sheetName) {
 		this(filePath);
@@ -22,20 +27,11 @@ public class ReadExcel {
 		sheet = workbook.getSheet(sheetName);
 	}
 
-	public ReadExcel(String filePath, int sheetIndex) {
-		this(filePath);
-		
-		this.sheetIndex = sheetIndex;
-		sheet = workbook.getSheetAt(sheetIndex);
-	}
-
 	public ReadExcel(String filePath) {
 		this.filePath = filePath;
 
 		try {
-
-			File excel = new File(filePath);
-			FileInputStream fis = new FileInputStream(excel);
+			fis = new FileInputStream(new File(filePath));
 			workbook = new XSSFWorkbook(fis);
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -43,12 +39,70 @@ public class ReadExcel {
 	}
 
 	public String readCell(int row, int cell) {
-		if (sheet == null) {
-			sheet = workbook.getSheetAt(0);
-		}
+		sheet = workbook.getSheet(sheetName);
 		return sheet.getRow(row).getCell(cell).getStringCellValue();
 	}
+	
+	public Iterator<Row> readRows(boolean firstRowHeader) {
+		sheet = workbook.getSheet(sheetName);
+		Iterator<Row> iterator = sheet.iterator();
+		if (firstRowHeader) {
+			iterator.next();
+		}
+		return iterator;
+	}
+	
+	public Iterator<Row> readRows() {
+		return readRows(true);
+	}
+	
+	public List<List<String>> obtainRecords(boolean firstRowHeader) {
+		List<List<String>> data = new ArrayList<>();
+		
+		Iterator<Row> rowList = readRows(firstRowHeader);
+		while (rowList.hasNext()) {
+			Row row = rowList.next();
+			Iterator<Cell> cellList = row.cellIterator();
+			List<String> rowData = new ArrayList<>();
+			
+			while (cellList.hasNext()) {
+				Cell cell = cellList.next();
+				rowData.add(cell.getStringCellValue());
+			}
+			data.add(rowData);
+		}
+		
+		
+		return data;
+	}
+	
+	public List<List<String>> obtainRecords() {
+		return obtainRecords(true);
+	}
+	
+	public Object[][] obtainProviderData(boolean firstRowHeader) {
+		List<List<String>> list = obtainRecords(firstRowHeader);
+		Object[][] array = list.stream()
+			    .map(l -> l.stream().toArray(String[]::new))
+			    .toArray(String[][]::new);
+		
+		return array;
+	}
+	
+	public Object[][] obtainProviderData() {
+		return obtainProviderData(true);
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		super.finalize();
+		workbook.close();
+		fis.close();
+	}
 
+	/*
+	 * Support methods
+	 */
 	public String getFilePath() {
 		return filePath;
 	}
@@ -63,14 +117,6 @@ public class ReadExcel {
 
 	public void setSheetName(String sheetName) {
 		this.sheetName = sheetName;
-	}
-
-	public int getSheetIndex() {
-		return sheetIndex;
-	}
-
-	public void setSheetIndex(int sheetIndex) {
-		this.sheetIndex = sheetIndex;
 	}
 
 	public XSSFWorkbook getWorkbook() {
