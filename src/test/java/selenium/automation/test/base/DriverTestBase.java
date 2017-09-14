@@ -1,5 +1,6 @@
 package selenium.automation.test.base;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -7,7 +8,10 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -48,16 +52,21 @@ public abstract class DriverTestBase {
 			break;
 		
 		case WEBDRIVER_FIREFOX:
-			webdriverPath = application.getProperty(WEBDRIVER_FIREFOX);
-			System.setProperty(WEBDRIVER_FIREFOX, webdriverPath);
+			webdriverPath = application.getProperty(WEBDRIVER_FIREFOX_DRIVER);
+			System.setProperty(WEBDRIVER_FIREFOX_DRIVER, webdriverPath);
 			driver = new FirefoxDriver();
 			
 			break;
 		
 		case WEBDRIVER_IE:
-			webdriverPath = application.getProperty(WEBDRIVER_IE);
-			System.setProperty(WEBDRIVER_IE, webdriverPath);
-			driver = new InternetExplorerDriver();
+			webdriverPath = application.getProperty(WEBDRIVER_IE_DRIVER);
+			System.setProperty(WEBDRIVER_IE_DRIVER, webdriverPath);
+			
+			DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+			caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+			caps.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+			caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
+			driver = new InternetExplorerDriver(caps);
 			
 			break;
 

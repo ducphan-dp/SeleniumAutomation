@@ -16,7 +16,9 @@ public class TestIEBrowser {
 		System.out.println("*******************");
 		System.out.println("launching IE browser");
 		System.setProperty("webdriver.ie.driver", "drivers/IEDriverServer.exe");
-		driver = new InternetExplorerDriver();
+		System.setProperty("webdriver.ie.driver.host", "127.0.0.1");
+		System.setProperty("webdriver.ie.driver.loglevel", "DEBUG");
+//		driver = new InternetExplorerDriver(5555);
 		driver.manage().window().maximize();
 	}
 	

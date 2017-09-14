@@ -11,7 +11,7 @@ dependencies {
     compile 'org.apache.poi:poi-scratchpad:3.+'
 
 	//Selenium
-    testCompile 'org.seleniumhq.selenium:selenium-java:2.+'
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.+'
     testCompile 'junit:junit:4.+'
 	
     //This is the TestNG test execution library that is better than JUnit
