@@ -23,6 +23,10 @@ dependencies {
 
     //Better reporting for testng.  It outputs a nice html report
     testCompile 'org.uncommons:reportng:1.1.4'
+    
+    //Log4J
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.+'
+  	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.+'
 }
 
 tasks.withType(Test) {

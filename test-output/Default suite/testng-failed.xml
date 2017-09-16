@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="selenium.automation.test.cases.TestIEBrowser">
+      <class name="selenium.automation.test.cases.TestFacebookLogin">
         <methods>
-          <include name="tearDown"/>
-          <include name="testGooglePageTitleInIEBrowser"/>
-          <include name="setUp"/>
+          <include name="readExcel"/>
+          <include name="quite"/>
+          <include name="initDriver"/>
+          <include name="loginPage"/>
         </methods>
-      </class> <!-- selenium.automation.test.cases.TestIEBrowser -->
+      </class> <!-- selenium.automation.test.cases.TestFacebookLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

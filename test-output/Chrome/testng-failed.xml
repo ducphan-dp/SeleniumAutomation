@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Chrome]">
-  <parameter name="browser" value="FIREFOX"/>
+  <parameter name="browser" value="CHROME"/>
   <test name="Facebook(failed)">
     <classes>
       <class name="selenium.automation.test.cases.TestFacebookLogin">
         <methods>
-          <include name="readExcel"/>
+          <include name="loginPagePOM"/>
           <include name="quite"/>
           <include name="initDriver"/>
-          <include name="loginPage"/>
         </methods>
       </class> <!-- selenium.automation.test.cases.TestFacebookLogin -->
     </classes>

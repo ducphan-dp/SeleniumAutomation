@@ -1,74 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Chrome" duration-ms="20948" started-at="2017-09-14T17:19:02Z" finished-at="2017-09-14T17:19:23Z">
+  <suite name="Default suite" duration-ms="7803" started-at="2017-09-16T19:50:58Z" finished-at="2017-09-16T19:51:05Z">
     <groups>
     </groups>
-    <test name="Facebook" duration-ms="20948" started-at="2017-09-14T17:19:02Z" finished-at="2017-09-14T17:19:23Z">
-      <class name="selenium.automation.test.cases.TestFacebookLogin">
-        <test-method status="PASS" signature="readExcel()[pri:0, instance:selenium.automation.test.cases.TestFacebookLogin@239963d8]" name="readExcel" is-config="true" duration-ms="1453" started-at="2017-09-15T00:19:03Z" finished-at="2017-09-15T00:19:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readExcel -->
-        <test-method status="PASS" signature="initDriver(java.lang.String)[pri:0, instance:selenium.automation.test.cases.TestFacebookLogin@239963d8]" name="initDriver" is-config="true" duration-ms="8746" started-at="2017-09-15T00:19:04Z" finished-at="2017-09-15T00:19:13Z">
+    <test name="Default test" duration-ms="7803" started-at="2017-09-16T19:50:58Z" finished-at="2017-09-16T19:51:05Z">
+      <class name="selenium.automation.test.cases.JavaSE_Test">
+        <test-method status="PASS" signature="initDriver(java.lang.String)[pri:0, instance:selenium.automation.test.cases.JavaSE_Test@13deb50e]" name="initDriver" is-config="true" duration-ms="4612" started-at="2017-09-17T02:50:58Z" finished-at="2017-09-17T02:51:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FIREFOX]]>
+                <![CDATA[CHROME]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method status="PASS" signature="loginPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.automation.test.cases.TestFacebookLogin@239963d8]" name="loginPage" duration-ms="5194" started-at="2017-09-15T00:19:13Z" data-provider="LoginRecords" finished-at="2017-09-15T00:19:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test_01]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[user1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="Login()[pri:0, instance:selenium.automation.test.cases.JavaSE_Test@13deb50e]" name="Login" duration-ms="2594" started-at="2017-09-17T02:51:02Z" finished-at="2017-09-17T02:51:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method status="PASS" signature="loginPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.automation.test.cases.TestFacebookLogin@239963d8]" name="loginPage" duration-ms="5433" started-at="2017-09-15T00:19:18Z" data-provider="LoginRecords" finished-at="2017-09-15T00:19:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test_02]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[user2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method status="PASS" signature="quite()[pri:0, instance:selenium.automation.test.cases.TestFacebookLogin@239963d8]" name="quite" is-config="true" duration-ms="28" started-at="2017-09-15T00:19:23Z" finished-at="2017-09-15T00:19:23Z">
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="quite()[pri:0, instance:selenium.automation.test.cases.JavaSE_Test@13deb50e]" name="quite" is-config="true" duration-ms="579" started-at="2017-09-17T02:51:05Z" finished-at="2017-09-17T02:51:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
-      </class> <!-- selenium.automation.test.cases.TestFacebookLogin -->
-    </test> <!-- Facebook -->
-  </suite> <!-- Chrome -->
+      </class> <!-- selenium.automation.test.cases.JavaSE_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
