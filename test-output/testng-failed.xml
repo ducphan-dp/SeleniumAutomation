@@ -2,15 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Chrome]">
   <parameter name="browser" value="CHROME"/>
-  <test name="Facebook(failed)">
+  <parameter name="simple" value="true"/>
+  <test name="KeywordGeneralTest(failed)">
     <classes>
-      <class name="selenium.automation.test.cases.TestFacebookLogin">
+      <class name="selenium.automation.test.base.KeywordGeneralTest">
         <methods>
-          <include name="loginPagePOM"/>
           <include name="quite"/>
           <include name="initDriver"/>
+          <include name="loginPage" invocation-numbers="19"/>
         </methods>
-      </class> <!-- selenium.automation.test.cases.TestFacebookLogin -->
+      </class> <!-- selenium.automation.test.base.KeywordGeneralTest -->
     </classes>
-  </test> <!-- Facebook(failed) -->
+  </test> <!-- KeywordGeneralTest(failed) -->
 </suite> <!-- Failed suite [Chrome] -->

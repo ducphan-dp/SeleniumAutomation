@@ -25,8 +25,8 @@ dependencies {
     testCompile 'org.uncommons:reportng:1.1.4'
     
     //Log4J
-    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.+'
-  	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.+'
+  	compile 'log4j:log4j:1.+'
+	compile 'org.slf4j:slf4j-log4j12:1.+'
 }
 
 tasks.withType(Test) {

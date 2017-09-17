@@ -27,13 +27,16 @@ public abstract class DriverTestBase {
 	
 	private Properties application;
 	protected WebDriver driver;
+	protected String browser;
+	protected boolean simpleFlag;
 	
 	
 	@BeforeClass
-	@Parameters("browser")
-	public void initDriver(@Optional("CHROME") String browser) {
+	@Parameters(value = {"browser", "simple"})
+	public void initDriver(@Optional("CHROME") String browser, @Optional("false") String simple) {
+		simpleFlag = Boolean.parseBoolean(simple);
 		
-		// Optional, if not specified, WebDriver will search your path for chromedriver
+		// Optional, if not specified, WebDriver will search your path for CHROME driver
 		String webdriverPath;
 		try (InputStream in = getClass().getClassLoader().getResourceAsStream("applications.properties")) {
 			application = new Properties();
@@ -77,7 +80,7 @@ public abstract class DriverTestBase {
 	}
 	
 	@AfterTest
-	public void quite() {
+	public void quite() throws InterruptedException {
 		driver.quit();
 	}
 

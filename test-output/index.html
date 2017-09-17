@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Chrome">
+              <span class="suite-name border-failed">Chrome</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Duc Phan\AppData\Local\Temp\testng-eclipse-1762632250\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Chrome">
+                    <span>C:\Users\Duc Phan\eclipse-workspace\SeleniumAutomation\src\test\resources\TestByKeyword.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Chrome">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Chrome">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Chrome">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Chrome">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Chrome">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Chrome">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,130 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Chrome" class="hide-methods failed suite-Chrome"> (hide)</a> <!-- hide-methods failed suite-Chrome -->
+                      <a href="#" panel-name="suite-Chrome" class="show-methods failed suite-Chrome"> (show)</a> <!-- show-methods failed suite-Chrome -->
+                    </span>
+                    <div class="method-list-content failed suite-Chrome">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, click, //div[2]/div[4]/div/span[1]/i, , , )">loginPage(, click, //div[2]/div[4]/div/span[1]/i, , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Chrome -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Chrome" class="hide-methods passed suite-Chrome"> (hide)</a> <!-- hide-methods passed suite-Chrome -->
+                      <a href="#" panel-name="suite-Chrome" class="show-methods passed suite-Chrome"> (show)</a> <!-- show-methods passed suite-Chrome -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Chrome">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="selenium.automation.test.cases.JavaSE_Test" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, click, RegistrationForm_gender_0, id, , )">loginPage(, click, RegistrationForm_gender_0, id, , )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, select, RegistrationForm_day, id, 10, )">loginPage(, select, RegistrationForm_day, id, 10, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, send_keys, RegistrationForm_password, id, passw0rd, )">loginPage(, send_keys, RegistrationForm_password, id, passw0rd, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, click, //div[1]/div/div/header/div[1]/nav/ul/li[6]/a, xpath, , )">loginPage(, click, //div[1]/div/div/header/div[1]/nav/ul/li[6]/a, xpath, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, select, RegistrationForm_year, id, 1988, )">loginPage(, select, RegistrationForm_year, id, 1988, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, click, //div[1]/nav/ul/li[5]/a, xpath, , )">loginPage(, click, //div[1]/nav/ul/li[5]/a, xpath, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, select, RegistrationForm_month, id, 10, )">loginPage(, select, RegistrationForm_month, id, 10, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, send_keys, RegistrationForm_first_name, id, Đức, )">loginPage(, send_keys, RegistrationForm_first_name, id, Đức, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(Test_01, , , , , )">loginPage(Test_01, , , , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, click, //*[@id=&quot;form-account-login&quot;]/div[2]/fieldset/div[3]/div[2]/button, xpath, , )">loginPage(, click, //*[@id="form-account-login"]/div[2]/fieldset/div[3]/div[2]/button, xpath, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, send_keys, LoginForm_email, id, phanvanducit@yahoo.com, )">loginPage(, send_keys, LoginForm_email, id, phanvanducit@yahoo.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, send_keys, LoginForm_password, id, passw0rd, )">loginPage(, send_keys, LoginForm_password, id, passw0rd, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, send_keys, RegistrationForm_email, id, phanvanducit@yahoo.com, )">loginPage(, send_keys, RegistrationForm_email, id, phanvanducit@yahoo.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, screen_shot, , , screenshots/register.jpg, )">loginPage(, screen_shot, , , screenshots/register.jpg, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, click, send, id, , )">loginPage(, click, send, id, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, screen_shot, , , screenshots/cart.jpg, )">loginPage(, screen_shot, , , screenshots/cart.jpg, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, send_keys, RegistrationForm_password2, id, passw0rd, )">loginPage(, send_keys, RegistrationForm_password2, id, passw0rd, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, go_url, , , http://www.lazada.vn/, )">loginPage(, go_url, , , http://www.lazada.vn/, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, go_url, , , http://www.lazada.vn/, )">loginPage(, go_url, , , http://www.lazada.vn/, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Chrome" title="selenium.automation.test.base.KeywordGeneralTest" hash-for-method="loginPage(, click, RegistrationForm_is_newsletter_subscribed, id, , )">loginPage(, click, RegistrationForm_is_newsletter_subscribed, id, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Chrome -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,121 +225,460 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Chrome" class="panel Chrome">
+          <div class="suite-Chrome-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">selenium.automation.test.cases.JavaSE_Test</span>
+              <img src="failed.png"/>
+              <span class="class-name">selenium.automation.test.base.KeywordGeneralTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
+                  <a name="loginPage(, click, //div[2]/div[4]/div/span[1]/i, , , )">
+                  </a> <!-- loginPage(, click, //div[2]/div[4]/div/span[1]/i, , , ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, click, //div[2]/div[4]/div/span[1]/i, , , )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at selenium.automation.webdriver.UIOperation.performance(UIOperation.java:69)
+	at selenium.automation.test.base.KeywordGeneralTest.loginPage(KeywordGeneralTest.java:29)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Chrome-class-failed -->
+          <div class="suite-Chrome-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">selenium.automation.test.base.KeywordGeneralTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, click, RegistrationForm_gender_0, id, , )">
+                  </a> <!-- loginPage(, click, RegistrationForm_gender_0, id, , ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, click, RegistrationForm_gender_0, id, , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, select, RegistrationForm_day, id, 10, )">
+                  </a> <!-- loginPage(, select, RegistrationForm_day, id, 10, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, select, RegistrationForm_day, id, 10, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, send_keys, RegistrationForm_password, id, passw0rd, )">
+                  </a> <!-- loginPage(, send_keys, RegistrationForm_password, id, passw0rd, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, send_keys, RegistrationForm_password, id, passw0rd, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, click, //div[1]/div/div/header/div[1]/nav/ul/li[6]/a, xpath, , )">
+                  </a> <!-- loginPage(, click, //div[1]/div/div/header/div[1]/nav/ul/li[6]/a, xpath, , ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, click, //div[1]/div/div/header/div[1]/nav/ul/li[6]/a, xpath, , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, select, RegistrationForm_year, id, 1988, )">
+                  </a> <!-- loginPage(, select, RegistrationForm_year, id, 1988, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, select, RegistrationForm_year, id, 1988, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, click, //div[1]/nav/ul/li[5]/a, xpath, , )">
+                  </a> <!-- loginPage(, click, //div[1]/nav/ul/li[5]/a, xpath, , ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, click, //div[1]/nav/ul/li[5]/a, xpath, , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, select, RegistrationForm_month, id, 10, )">
+                  </a> <!-- loginPage(, select, RegistrationForm_month, id, 10, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, select, RegistrationForm_month, id, 10, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, send_keys, RegistrationForm_first_name, id, Đức, )">
+                  </a> <!-- loginPage(, send_keys, RegistrationForm_first_name, id, Đức, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, send_keys, RegistrationForm_first_name, id, Đức, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(Test_01, , , , , )">
+                  </a> <!-- loginPage(Test_01, , , , , ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(Test_01, , , , , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, click, //*[@id=&quot;form-account-login&quot;]/div[2]/fieldset/div[3]/div[2]/button, xpath, , )">
+                  </a> <!-- loginPage(, click, //*[@id="form-account-login"]/div[2]/fieldset/div[3]/div[2]/button, xpath, , ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, click, //*[@id="form-account-login"]/div[2]/fieldset/div[3]/div[2]/button, xpath, , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, send_keys, LoginForm_email, id, phanvanducit@yahoo.com, )">
+                  </a> <!-- loginPage(, send_keys, LoginForm_email, id, phanvanducit@yahoo.com, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, send_keys, LoginForm_email, id, phanvanducit@yahoo.com, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, send_keys, LoginForm_password, id, passw0rd, )">
+                  </a> <!-- loginPage(, send_keys, LoginForm_password, id, passw0rd, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, send_keys, LoginForm_password, id, passw0rd, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, send_keys, RegistrationForm_email, id, phanvanducit@yahoo.com, )">
+                  </a> <!-- loginPage(, send_keys, RegistrationForm_email, id, phanvanducit@yahoo.com, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, send_keys, RegistrationForm_email, id, phanvanducit@yahoo.com, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, screen_shot, , , screenshots/register.jpg, )">
+                  </a> <!-- loginPage(, screen_shot, , , screenshots/register.jpg, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, screen_shot, , , screenshots/register.jpg, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, click, send, id, , )">
+                  </a> <!-- loginPage(, click, send, id, , ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, click, send, id, , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, screen_shot, , , screenshots/cart.jpg, )">
+                  </a> <!-- loginPage(, screen_shot, , , screenshots/cart.jpg, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, screen_shot, , , screenshots/cart.jpg, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, send_keys, RegistrationForm_password2, id, passw0rd, )">
+                  </a> <!-- loginPage(, send_keys, RegistrationForm_password2, id, passw0rd, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, send_keys, RegistrationForm_password2, id, passw0rd, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, go_url, , , http://www.lazada.vn/, )">
+                  </a> <!-- loginPage(, go_url, , , http://www.lazada.vn/, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, go_url, , , http://www.lazada.vn/, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, go_url, , , http://www.lazada.vn/, )">
+                  </a> <!-- loginPage(, go_url, , , http://www.lazada.vn/, ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, go_url, , , http://www.lazada.vn/, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(, click, RegistrationForm_is_newsletter_subscribed, id, , )">
+                  </a> <!-- loginPage(, click, RegistrationForm_is_newsletter_subscribed, id, , ) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(, click, RegistrationForm_is_newsletter_subscribed, id, , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Chrome-class-passed -->
+        </div> <!-- panel Chrome -->
+        <div panel-name="test-xml-Chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Duc Phan\AppData\Local\Temp\testng-eclipse-1762632250\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Duc Phan\eclipse-workspace\SeleniumAutomation\src\test\resources\TestByKeyword.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Chrome&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
+  &lt;parameter name=&quot;simple&quot; value=&quot;true&quot;/&gt;
+  &lt;test name=&quot;KeywordGeneralTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;selenium.automation.test.cases.JavaSE_Test&quot;/&gt;
+      &lt;class name=&quot;selenium.automation.test.base.KeywordGeneralTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- KeywordGeneralTest --&gt;
+&lt;/suite&gt; &lt;!-- Chrome --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Chrome</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">KeywordGeneralTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Chrome</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Chrome</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Chrome');
+function tableData_Chrome() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(21);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'selenium.automation.test.cases.JavaSE_Test')
-data.setCell(0, 3, 2594);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'loginPage')
+data.setCell(0, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(0, 3, 7737);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginPage')
+data.setCell(1, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(1, 3, 4332);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginPage')
+data.setCell(2, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(2, 3, 2415);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginPage')
+data.setCell(3, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(3, 3, 1848);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginPage')
+data.setCell(4, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(4, 3, 1666);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginPage')
+data.setCell(5, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(5, 3, 1577);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginPage')
+data.setCell(6, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(6, 3, 1302);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginPage')
+data.setCell(7, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(7, 3, 1293);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginPage')
+data.setCell(8, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(8, 3, 1238);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginPage')
+data.setCell(9, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(9, 3, 811);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginPage')
+data.setCell(10, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(10, 3, 322);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginPage')
+data.setCell(11, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(11, 3, 162);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginPage')
+data.setCell(12, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(12, 3, 155);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginPage')
+data.setCell(13, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(13, 3, 142);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'loginPage')
+data.setCell(14, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(14, 3, 132);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginPage')
+data.setCell(15, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(15, 3, 112);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginPage')
+data.setCell(16, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(16, 3, 103);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'loginPage')
+data.setCell(17, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(17, 3, 94);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'loginPage')
+data.setCell(18, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(18, 3, 92);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'loginPage')
+data.setCell(19, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'loginPage')
+data.setCell(20, 2, 'selenium.automation.test.base.KeywordGeneralTest')
+data.setCell(20, 3, 0);
+window.suiteTableData['Chrome']= { tableData: data, tableDiv: 'times-div-Chrome'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-Chrome">
+              </div> <!-- times-div-Chrome -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Chrome</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">selenium.automation.test.cases.JavaSE_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">selenium.automation.test.base.KeywordGeneralTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">initDriver(CHROME)</span>
+                <span class="method-name">initDriver(CHROME, true)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Login</span>
-                <span class="method-start">4612 ms</span>
+                <span class="method-name">loginPage(Test_01, , , , , )</span>
+                <span class="method-start">4245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, go_url, , , http://www.lazada.vn/, )</span>
+                <span class="method-start">4245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, click, //div[1]/div/div/header/div[1]/nav/ul/li[6]/a, xpath, , )</span>
+                <span class="method-start">11983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, click, RegistrationForm_gender_0, id, , )</span>
+                <span class="method-start">16316 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, send_keys, RegistrationForm_email, id, phanvanducit@yahoo.com, )</span>
+                <span class="method-start">18732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, send_keys, RegistrationForm_first_name, id, Đức, )</span>
+                <span class="method-start">19055 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, select, RegistrationForm_day, id, 10, )</span>
+                <span class="method-start">19150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, select, RegistrationForm_month, id, 10, )</span>
+                <span class="method-start">19314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, select, RegistrationForm_year, id, 1988, )</span>
+                <span class="method-start">19470 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, send_keys, RegistrationForm_password, id, passw0rd, )</span>
+                <span class="method-start">19614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, send_keys, RegistrationForm_password2, id, passw0rd, )</span>
+                <span class="method-start">19747 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, click, RegistrationForm_is_newsletter_subscribed, id, , )</span>
+                <span class="method-start">19841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, click, send, id, , )</span>
+                <span class="method-start">19945 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, screen_shot, , , screenshots/register.jpg, )</span>
+                <span class="method-start">21794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, click, //div[1]/nav/ul/li[5]/a, xpath, , )</span>
+                <span class="method-start">22605 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, send_keys, LoginForm_email, id, phanvanducit@yahoo.com, )</span>
+                <span class="method-start">23908 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, send_keys, LoginForm_password, id, passw0rd, )</span>
+                <span class="method-start">25147 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, click, //*[@id="form-account-login"]/div[2]/fieldset/div[3]/div[2]/button, xpath, , )</span>
+                <span class="method-start">25260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, go_url, , , http://www.lazada.vn/, )</span>
+                <span class="method-start">26838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginPage(, click, //div[2]/div[4]/div/span[1]/i, , , )</span>
+                <span class="method-start">28505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(, screen_shot, , , screenshots/cart.jpg, )</span>
+                <span class="method-start">28509 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quite</span>
-                <span class="method-start">7208 ms</span>
+                <span class="method-start">29806 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

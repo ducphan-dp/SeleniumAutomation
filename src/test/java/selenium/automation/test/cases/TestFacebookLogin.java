@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import selenium.automation.excel.ExcelReader;
 import selenium.automation.test.base.DriverTestBase;
 import selenium.automation.test.pom.FacebookLogin;
-import selenium.automation.test.reponsitory.FacebookReponsitory;
 import selenium.automation.webdriver.UIOperation;
 
 public class TestFacebookLogin extends DriverTestBase {
@@ -26,8 +25,8 @@ public class TestFacebookLogin extends DriverTestBase {
 			System.out.println("New Testcase->"+ testid +" Started");
 			return;
 		}
-		FacebookReponsitory reponsitory = new FacebookReponsitory();
-		UIOperation operation = new UIOperation(driver, reponsitory.getObjectReponsitory());
+		
+		UIOperation operation = new UIOperation(driver);
 		operation.performance(keyword, objectName, objectType, value);
 	}
 	
