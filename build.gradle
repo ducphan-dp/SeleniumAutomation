@@ -11,22 +11,25 @@ dependencies {
     compile 'org.apache.poi:poi-scratchpad:3.+'
 
 	//Selenium
-    testCompile 'org.seleniumhq.selenium:selenium-java:3.+'
-    testCompile 'junit:junit:4.+'
+    compile 'org.seleniumhq.selenium:selenium-java:3.+'
+    compile 'junit:junit:4.+'
 	
     //This is the TestNG test execution library that is better than JUnit
     //Adding a + for a version number means get the latest number for that version.  So in this case get the latest 6.8.whatever deployment
-    testCompile group: 'org.testng', name: 'testng', version: '6.8.+'
+    compile group: 'org.testng', name: 'testng', version: '6.8.+'
 
     //An assertion library that is better than JUnit defaults
-    testCompile 'org.easytesting:fest-assert-core:2.0M10'
+    compile 'org.easytesting:fest-assert-core:2.0M10'
 
     //Better reporting for testng.  It outputs a nice html report
-    testCompile 'org.uncommons:reportng:1.1.4'
+    compile 'org.uncommons:reportng:1.1.4'
     
     //Log4J
   	compile 'log4j:log4j:1.+'
 	compile 'org.slf4j:slf4j-log4j12:1.+'
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-io
+    compile group: 'org.apache.commons', name: 'commons-io', version: '1.3.2'
 }
 
 tasks.withType(Test) {
@@ -36,6 +39,10 @@ tasks.withType(Test) {
 
 test {
     useTestNG {
-        suites 'src/test/resources/testng.xml'
+        suites 'src/test/resources/TestByKeyword.xml'
+        suites 'src/test/resources/TestFacebook.xml'
+        suites 'src/test/resources/TestGoogle.xml'
+        suites 'src/test/resources/TestLazada.xml'
+        suites 'src/test/resources/TestJavaSE.xml'
     }
 }

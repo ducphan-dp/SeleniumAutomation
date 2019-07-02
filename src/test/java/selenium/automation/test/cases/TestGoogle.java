@@ -30,9 +30,6 @@ public class TestGoogle extends DriverTestBase{
 			searchBox.sendKeys("qa automation");
 			searchBox.submit();
 
-			// click search
-			driver.findElement(By.name("btnG")).click();
-
 			// Wait for search to complete
 			wait.until(new ExpectedCondition<Boolean>() {
 				public Boolean apply(WebDriver webDriver) {
